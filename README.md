@@ -1,3 +1,2 @@
-# HELP
-I don't know what I'm doing
-
+# Form 1 Reminder Bot
+Just a side project to learn js and stuff
