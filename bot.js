@@ -11,7 +11,7 @@ function respond() {
   // (request.text && botRegex.test(request.text))
   // weekday response
   // if (date.getHours() == 20 && (date.getDay != 5 || date.getDay != 6))
-  if (date.getHours() == 22 && date.getMinutes > 40 && date.getMinutes 41) { 
+  if (date.getHours() == 21 && date.getMinutes >= 41 && date.getMinutes <= 42) { 
     this.res.writeHead(200);
     postMessage();
     this.res.end();
