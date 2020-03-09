@@ -1,8 +1,8 @@
 var HTTPS = require('https');
 
-// var botID = process.env.BOT_ID;
+var botID = process.env.BOT_ID;
 
-var botID = 'c4fc8b3e971789b2615e9beef3';
+// var botID = '5fdff496ef5e210bb66befa88c';
 
 var date = new Date();
 
@@ -58,3 +58,4 @@ function postMessage() {
 
 
 exports.respond = respond;
+
