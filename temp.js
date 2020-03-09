@@ -1,13 +1,25 @@
 var HTTPS = require('https');
-var cool = require('cool-ascii-faces');
 
-var botID = process.env.BOT_ID;
+// var botID = process.env.BOT_ID;
+
+var botID = '5fdff496ef5e210bb66befa88c';
+
+var date = new Date();
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/coolguy$/;
+      botRegex = /^\/f1$/;
 
-  if(request.text && botRegex.test(request.text)) {
+  // (request.text && botRegex.test(request.text))
+  // weekday response
+  // if (date.getHours() == 20 && (date.getDay != 5 || date.getDay != 6))
+  if (request.text && botRegex.test(request.text)) { 
+    this.res.writeHead(200);
+    setInterval(postMessage(),10000);
+    this.res.end();
+
+  // weekend res
+  } else if (0) { // (date.getHours() == 20)
     this.res.writeHead(200);
     postMessage();
     this.res.end();
@@ -21,7 +33,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = cool();
+  botResponse = 'sign the form 1 please';
 
   options = {
     hostname: 'api.groupme.com',
@@ -55,3 +67,5 @@ function postMessage() {
 
 
 exports.respond = respond;
+
+postMessage();

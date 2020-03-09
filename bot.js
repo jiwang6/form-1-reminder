@@ -8,7 +8,7 @@ var date = new Date();
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/f1$/;
+      botRegex = /^\/doolieBot$/;
 
   // (request.text && botRegex.test(request.text))
   // weekday response
@@ -33,7 +33,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = 'sign the form 1 please';
+  botResponse = 'https://drive.google.com/file/d/1ParNegKTHfQFbgfcBWuw-ZwT6vtsVyMt/view?usp=sharing';
 
   options = {
     hostname: 'api.groupme.com',
