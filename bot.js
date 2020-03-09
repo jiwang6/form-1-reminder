@@ -13,7 +13,7 @@ function respond() {
   // if (date.getHours() == 20 && (date.getDay != 5 || date.getDay != 6))
   if (1) { 
     this.res.writeHead(200);
-    setInterval(postMessage(),3000);
+    setInterval(postMessage(),10000);
     this.res.end();
 
   // weekend res
