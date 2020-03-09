@@ -1,3 +1,4 @@
+// require('dotenv').config({path:__dirname+'../.env'})
 var HTTPS = require('https');
 
 var botID = process.env.BOT_ID;
