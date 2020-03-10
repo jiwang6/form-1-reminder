@@ -79,7 +79,7 @@ function postMessage2() {
   botReq.end(JSON.stringify(body));
 }
 
-if (date.getDay !=5 || date.getDay!=6) {
+if (date.getDay != 5 && date.getDay!= 4) {
   postMessage2();
 }
 
