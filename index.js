@@ -28,5 +28,5 @@ server.listen(port);
 
 function ping() {
   this.res.writeHead(200);
-  this.res.end("????"); // idk what the fuck I'm doing
+  this.res.end("Help me please"); // idk what the fuck I'm doing
 }
