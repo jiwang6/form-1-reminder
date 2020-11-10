@@ -1,4 +1,4 @@
-# BullBot
+# BirrBot
 The original GroupMe bot for form-1 reminders, boxed lunch reminders, and mitch's menus. More functionality coming soon<sup>tm</sup>.
 
 ## Bot Functionality 
@@ -11,7 +11,7 @@ At 2100 everyday, the server will send two reminders: sign the form 1 and like f
 ### Doolie bot
 Says the meals of the day, days until major events, the UOD, etc.
 
-### BullBot 1.1
+### BirrBot 1.1
 Additional commands and responses. Will have some sort of assignment reminders, potentially CE Quizzes.
 
 ### EudaimoniaBot
