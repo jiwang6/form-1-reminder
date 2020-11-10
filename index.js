@@ -28,5 +28,5 @@ server.listen(port);
 
 function ping() {
   this.res.writeHead(200);
-  this.res.end("Sign the damn form 1 and also like for boxed lunches.");
+  this.res.end("????"); // idk what the fuck I'm doing
 }
