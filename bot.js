@@ -6,6 +6,8 @@ var botID = '8b672c3b569a3771b1a3272d53';
 
 var date = new Date();
 
+var jokeText;
+
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/ahaha$/;
@@ -23,8 +25,8 @@ function respond() {
 
 function postMessage() {
   var botResponse, options, body, botReq;
-
-  botResponse = newJoke();
+  getJoke();
+  botResponse = jokeText;
 
   options = {
     hostname: 'api.groupme.com',
@@ -61,6 +63,28 @@ var jokes= ['Guess the number of programmers it takes to change a light bulb? Ze
 function newJoke(){
   var randomNumber=Math.floor(Math.random()*(20));
   return jokes[randomNumber];
+}
+
+function getJoke() {
+  // make an API request to https://icanhazdadjoke.com/'
+  fetch('https://icanhazdadjoke.com/', {
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(function(response) {
+    /* convert Stringified JSON response to Javascript Object */
+    return response.json();
+  }).then(function(data) {
+    /* replace innerText of .joke-text with data.joke */
+    // extract the joke text
+    jokeText = data.joke;
+    // do the replacement
+    //return joke;
+
+  }).catch(function(error) {
+    // if some error occured
+    console.log(error);
+  });
 }
 
 
