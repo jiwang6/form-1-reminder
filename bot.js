@@ -63,13 +63,13 @@ var jokes= ['There are 16 kinds of people in the world: those who understand hex
             'Never trust atoms; they make up everything!',
             'You gotta hand it to short people ... because they can’t reach it.',
             'The thief that stole my iPhone should Face-Time.',
-            'I sold my vaccuum clearner today; all it was doing was collecting dust.',
+            'I sold my vaccuum cleaner today; all it was doing was collecting dust.',
             'Why do bees have sticky hair? Because they use honeycombs.',
             'My wife emailed me pictures of my wedding but I couldn’t open the files. I always have trouble with emotional attachments.',
             '\"I will get an A in 350\"',
             'Last night, I had a dream that I weighed less than a thousandth of a gram... I was like, 0mg.',
             'My friend said he couldn’t afford to pay his huge water bill. I sent him a \"Get Well Soon!\" card.',
-            'Did you know ... you can actually listen to the blood in your veins? You just have to listen varicose-ly',
+            'Did you know ... you can actually hear the blood in your veins? You just have to listen varicose-ly',
             'I\'ve got this weird fetish for figuring things out. As a matter of fact, I just came to that realization.',
             'I wanted to study Computer Science but then I stopped... Turns out its just a sudo science.'
            ]
